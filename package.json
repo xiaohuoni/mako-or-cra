@@ -9,10 +9,10 @@
   "scripts": {
     "analyze": "source-map-explorer 'dist/*.js'",
     "analyze:cra": "source-map-explorer 'build/static/js/*.js'",
-    "build": "maj build",
+    "build": "mako build --mode production",
     "build:cra": "ANALYZE=true react-scripts build",
     "build:vite": "tsc -b && vite build",
-    "start": "maj dev",
+    "start": "mako build --watch",
     "start:cra": "react-scripts start",
     "start:vite": "vite"
   },
