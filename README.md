@@ -2,7 +2,7 @@
 
 ## mako build
 
-4.5MB
+dist 4.5MB
 
 ```
 Building with mako for development...
@@ -16,7 +16,7 @@ Complete!
 
 ## cra build
 
-1.4MB
+build 1.4MB
 
 ```
 Creating an optimized production build...
@@ -34,7 +34,26 @@ The project was built assuming it is hosted at /.
 You can control this with the homepage field in your package.json.
 ```
 
-## mako analyze
+https://github.com/xiaohuoni/mako-or-cra
+
+## vite build
+
+vDist 251kb
+
+```
+> tsc -b && vite build
+
+vite v5.3.1 building for production...
+✓ 273 modules transformed.
+vDist/index.html                  0.39 kB │ gzip:  0.27 kB
+vDist/assets/index-BKZw79ZQ.js    0.12 kB │ gzip:  0.13 kB
+vDist/assets/index-CtIYUYIA.js    0.32 kB │ gzip:  0.24 kB
+vDist/assets/index-W5XoTJ19.js   16.58 kB │ gzip:  5.91 kB
+vDist/assets/index-B_rWlKzO.js  233.99 kB │ gzip: 75.48 kB
+✓ built in 762ms
+```
+
+# mako analyze
 
 source-map-explorer 'dist/*.js'
 

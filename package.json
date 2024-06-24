@@ -7,12 +7,14 @@
   "author": "",
   "main": "index.js",
   "scripts": {
-    "analyze:cra": "source-map-explorer 'build/static/js/*.js'",
     "analyze": "source-map-explorer 'dist/*.js'",
-    "build": "mako build",
-    "build:cra": "react-scripts build",
-    "start": "mako build --watch",
-    "start:cra": "react-scripts start"
+    "analyze:cra": "source-map-explorer 'build/static/js/*.js'",
+    "build": "maj build",
+    "build:cra": "ANALYZE=true react-scripts build",
+    "build:vite": "tsc -b && vite build",
+    "start": "maj dev",
+    "start:cra": "react-scripts start",
+    "start:vite": "vite"
   },
   "browserslist": {
     "production": [
@@ -40,6 +42,9 @@
     "@types/react-dom": "^18.2.18",
     "react-scripts": "5.0.1",
     "source-map-explorer": "^2.5.3",
-    "typescript": "^5.5.2"
+    "typescript": "^5.5.2",
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.3.1"
+
   }
 }
